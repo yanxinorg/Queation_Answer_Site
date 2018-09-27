@@ -14,11 +14,30 @@
 
 ## 项目架构
 
-1.  基于SpringMVC架构,构建整个web响应;
+### 基于SpringMVC架构,构建整个web响应;
 
-2.  架构模块和分层：（路径：...\src\main\java\com\nowcoder）
+1.  前端控制器（DispacherServlet）：整个响应与返回的核心，接收请求交给映射处理器HandlerMapping;
+
+2.  映射处理器（HandlerMapping）：根据路径找到相应的处理适配器HandlerAdapter;
+
+3.  处理器适配器（HandlerAdapter）：包括拦截器/controller等，用来处理一些功能请求，返回ModelAndView对象（包括模型数据、逻辑视图名）;
+
+4.  视图解析器（ModelAndView）：根据ModelAndView中解析具体视图;
+
+5.  将Model模型中的数据渲染到View上；
+
+* 每个模块传出、传入参数具体如下：
+<ol>
+<li>Bird</li>
+<li>McHale</li>
+<li>Parish</li>
+</ol>
 
 
+
+### 架构模块和分层：（路径：..\src\main\java\com\nowcoder）
+
+1.  
 
 
 
