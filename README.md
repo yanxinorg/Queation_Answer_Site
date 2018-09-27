@@ -22,24 +22,30 @@
 
 3.  处理器适配器（HandlerAdapter）：包括拦截器/controller等，用来处理一些功能请求，返回ModelAndView对象（包括模型数据、逻辑视图名）;
 
-4.  视图解析器（ModelAndView）：根据ModelAndView中解析具体视图;
+4.  视图解析器（ViewResolver）：根据ModelAndView中解析具体视图;
 
 5.  将Model模型中的数据渲染到View上；
-
-* 每个模块传出、传入参数具体如下：
-<ol>
-<li>Bird</li>
-<li>McHale</li>
-<li>Parish</li>
-</ol>
-
 
 
 ### 架构模块和分层：（路径：..\src\main\java\com\nowcoder）
 
-1.  
+1.  aspect包：aop模块，将各个功能模块中的登陆横切出来;
 
+2.  async包：异步队列模块,各个小功能设计成异步的;
 
+3.  configuradtion包：WebMVC配置，重写拦截器方法，登陆请求拦截，密码拦截;
+
+4.  controller包：处理器适配器;
+
+5.  dao包：数据库交互;
+
+6.  Intercepter包：拦截器;
+
+7.  model包：模型和视图对象;
+
+8.  service包：业务层;
+
+9.  
 
 ## 项目功能模块设计
 
