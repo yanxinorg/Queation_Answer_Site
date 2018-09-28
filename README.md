@@ -78,4 +78,4 @@
 2.  思路：  (1)event1,2,3,4... ---->(2)eventProducer---->(3)加入PriorityQueue---->(4)event(关注、点赞、点踩、发布、推送、登陆);
 ### Solr站内问题搜索模块
 1.  service层增加question检索;
-2.  增加中文分词IK-Analyzer分词;
+2.  增加中文分词，IK-Analyzer分词配置;
