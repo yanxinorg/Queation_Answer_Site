@@ -28,8 +28,8 @@ public class MailSender implements InitializingBean {
     public boolean sendWithHTMLTemplate(String to, String subject,
                                         String template, Map<String, Object> model) {
         try {
-            String nick = MimeUtility.encodeText("牛客中级课");
-            InternetAddress from = new InternetAddress(nick + "<course@nowcoder.com>");
+            String nick = MimeUtility.encodeText("测试一下");
+            InternetAddress from = new InternetAddress(nick + "<course@foxmail.com>");
             MimeMessage mimeMessage = mailSender.createMimeMessage();
             MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mimeMessage);
             String result = VelocityEngineUtils
