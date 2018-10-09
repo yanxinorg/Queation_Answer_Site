@@ -79,3 +79,4 @@
 ### Solr站内问题搜索模块
 1.  service层增加question检索;
 2.  增加中文分词，IK-Analyzer分词配置;
+3.  检索可以做2块，一是，基于标题的检索(question),另一个是基于评论内容的检索(comments),代码中只进行了标题检索。
